@@ -21,9 +21,9 @@ class SEBlock(nn.Module):
         return x * y.expand_as(x)
 
 
-class BaselineModel(nn.Module):
+class Base_SE(nn.Module):
     def __init__(self):
-        super(BaselineModel, self).__init__()
+        super(Base_SE, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=3, padding=1)
         self.bn1 = nn.BatchNorm2d(64)
         self.conv2 = nn.Conv2d(64, 128, kernel_size=3, padding=1)
@@ -34,12 +34,13 @@ class BaselineModel(nn.Module):
         self.bn4 = nn.BatchNorm2d(512)
         self.conv5 = nn.Conv2d(512, 1024, kernel_size=3, padding=1)
         self.bn5 = nn.BatchNorm2d(1024)
-        self.se = SEBlock(1024)
+        self.se1 = SEBlock(512)
+        
         
         self.pool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc1 = nn.Linear(1024, 2048)
-        self.fc2 = nn.Linear(2048, 1024)
-        self.fc3 = nn.Linear(1024, 512)
+        self.fc1 = nn.Linear(512, 1024)
+        self.fc2 = nn.Linear(1024, 2048)
+        self.fc3 = nn.Linear(2048, 512)
         self.droupout1 = nn.Dropout(0.2)
         self.droupout2 = nn.Dropout(0.5)
         self.fc4 = nn.Linear(512, 6)
@@ -59,8 +60,7 @@ class BaselineModel(nn.Module):
         x = self.droupout1(x)
         x = F.relu(self.bn5(self.conv5(x)))
         x = F.max_pool2d(x, 2)
-        x = self.se(x)
-        # x = self.droupout1(x)
+        x = self.se1(x)
         
         x = self.pool(x)
         x = x.view(x.size(0), -1)
