@@ -8,7 +8,7 @@ from torchvision import transforms
 import torch.optim as optim
 import matplotlib.pyplot as plt
 
-from approach.baseline_se import BaselineModel
+from approach.baseline_se import Base_SE
 from get_dataset import Four4All
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
@@ -51,7 +51,7 @@ print(f"Test batch: Image shape {test_image.shape}, Label shape {test_label.shap
 
 
 # Load the model
-model = BaselineModel().to(device)
+model = Base_SE().to(device)
 
 
 # Print the number of parameters
@@ -66,6 +66,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9, weight_decay=1
 patience = 15
 best_val_acc = 0
 patience_counter = 0
+epoch_counter = 0
 
 num_epochs = 80
 
@@ -141,6 +142,7 @@ for epoch in range(num_epochs):
     val_accuracies.append(val_acc)
 
     print(f"Epoch {epoch+1}, Train Loss: {train_loss}, Train Accuracy: {train_acc}, Test Loss: {test_loss}, Test Accuracy: {test_acc}, Validation Loss: {val_loss}, Validation Accuracy: {val_acc}")
+    epoch_counter += 1
     
     if val_acc > best_val_acc:
         best_val_acc = val_acc
@@ -155,7 +157,7 @@ for epoch in range(num_epochs):
         break
 
 df = pd.DataFrame({
-    'Epoch': range(1, 80),
+    'Epoch': range(1, epoch_counter+1),
     'Train Loss': train_losses,
     'Test Loss': test_losses,
     'Validation Loss': val_losses,
