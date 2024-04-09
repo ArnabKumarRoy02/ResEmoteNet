@@ -17,7 +17,7 @@ device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
 
 # Load the model
 model = FourforAll().to(device)
-model.load_state_dict(torch.load('best_model.pth', map_location=device))
+model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
 model.eval()
 
 
