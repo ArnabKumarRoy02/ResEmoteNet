@@ -35,9 +35,9 @@ video_capture = cv2.VideoCapture(0)
 
 # Settings for text
 font = cv2.FONT_HERSHEY_SIMPLEX
-font_scale = 1
-font_color = (0, 120, 120)  # This is BGR color
-thickness = 4
+font_scale = 1.2
+font_color = (0, 255, 0)  # This is BGR color
+thickness = 3
 line_type = cv2.LINE_AA
 
 
