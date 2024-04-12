@@ -8,7 +8,7 @@ import warnings
 from urllib3.exceptions import InsecureRequestWarning
 warnings.simplefilter('ignore', InsecureRequestWarning)
 
-from four4all import FourforAll
+from approach.fourforall import FourforAll
 
 
 # Set the device
