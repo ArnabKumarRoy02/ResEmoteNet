@@ -11,7 +11,7 @@ from approach.fourforall import FourforAll
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Emotions labels
-emotions = ['happiness', 'surprise', 'anger', 'sadness', 'fear', 'disgust']
+emotions = ['happiness', 'surprise', 'sadness', 'anger', 'fear', 'disgust']
 
 model = FourforAll().to(device)
 model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
