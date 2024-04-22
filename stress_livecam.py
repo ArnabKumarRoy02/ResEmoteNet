@@ -107,9 +107,14 @@ def detect_stress_faces(video_frame, faces):
         max_index = np.argmax(rounded_scores)
         max_emotion = emotions[max_index]
         max_probability = rounded_scores[max_index]
-        if max_emotion != 'happiness' and max_probability > 0.80:
+        
+        if max_emotion != 'happiness' and max_probability > 0.85:
             stress_label = 'Stressed'
             font_color = (0, 0, 255)
+            
+        elif max_emotion != 'happiness' and max_probability > 0.65:
+            stress_label = 'Mildly Stressed'
+            font_color = (0, 0, 175)
         else:
             stress_label = 'Not Stressed'
             font_color = (255, 0, 0)
