@@ -3,10 +3,10 @@
 This file contains all the classification report for the Four4All model across different datasets.
 
 The datasets that were tested:
- - 👍 FER2013
- - 👍 RAF-DB
- - 👍 Four4All
- - ⏳ CK+ (Coming soon)
+ - ✅ FER2013
+ - ✅ RAF-DB
+ - ✅ Four4All
+ - ✅ CK+
  - ⏳ FERPlus (Coming soon)
  - ⏳ AffectNet (Coming soon)
 
@@ -57,3 +57,19 @@ The datasets that were tested:
 | accuracy  |           |        |	 0.90    |	 900   |
 | macro avg |	  0.91    |	 0.90  |	 0.90    |	 900   |
 | weighted avg |	0.91  |	 0.90  |	 0.90	   |   900   |
+
+
+## CK+ Classification Report
+
+|              | Precision |	Recall |	 f1-score | Support |
+|--------------|-----------|--------|-----------|---------|
+|    happiness |   1.00    |	 1.00  |	  1.00    |	   75   |
+|    surprise  |	  1.00  	 |  1.00  |   1.00	   |    75   |
+|    sadness   |	  1.00    |	 1.00  |	  1.00    |	   75   |
+|    anger	    |   1.00  	 |  1.00	 |   1.00    |    75   |
+|    disgust   |	  1.00    |	 1.00  |	  1.00    |	   75   |
+|     fear	    |   1.00	   |  1.00	 |   1.00	   |    75   |	
+|              |           |        |           |         |
+|   accuracy   |           |        |	  1.00    |	  450   |
+|   macro avg  |	  1.00    |	 1.00  |	  1.00    |	  450   |
+| weighted avg |	  1.00    |	 1.00  |	  1.00	   |   450   |
