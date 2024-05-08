@@ -8,7 +8,7 @@ The datasets that were tested:
  - ✅ Four4All
  - ✅ CK+
  - ⏳ FERPlus (Coming soon)
- - ⏳ AffectNet (Coming soon)
+ - ✅ AffectNet
 
 ## FER2013 Classification Report	
 
@@ -73,3 +73,19 @@ The datasets that were tested:
 |   accuracy   |           |        |	  1.00    |	  450   |
 |   macro avg  |	  1.00    |	 1.00  |	  1.00    |	  450   |
 | weighted avg |	  1.00    |	 1.00  |	  1.00	   |   450   |
+
+
+## AffectNet (6 emotions) Classification Report
+
+|              | Precision |	Recall |	 f1-score | Support |
+|--------------|-----------|--------|-----------|---------|
+|     happy    |   0.96    |	 0.99  |	  0.98    |	  100   |
+|      sad     |	  1.00  	 |  0.94  |   0.97	   |   100   |
+|     fear     |	  0.98    |	 0.95  |	  0.96    |	  100   |
+|   surprise	  |   0.99  	 |  1.00	 |   1.00    |   100   |
+|     anger    |	  0.97    |	 1.00  |	  0.99    |	  100   |
+|   disgust    |   0.97	   |  0.99	 |   0.98	   |   100   |	
+|              |           |        |           |         |
+|   accuracy   |           |        |	  0.98    |	  600   |
+|   macro avg  |	  0.98    |	 0.98  |	  0.98    |	  600   |
+| weighted avg |	  0.98    |	 0.98  |	  0.98	   |   600   |
