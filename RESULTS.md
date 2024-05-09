@@ -7,7 +7,7 @@ The datasets that were tested:
  - ✅ RAF-DB
  - ✅ Four4All
  - ✅ CK+
- - ⏳ FERPlus (Coming soon)
+ - ✅ FERPlus
  - ✅ AffectNet
 
 ## FER2013 Classification Report	
@@ -89,3 +89,19 @@ The datasets that were tested:
 |   accuracy   |           |        |	  0.98    |	  600   |
 |   macro avg  |	  0.98    |	 0.98  |	  0.98    |	  600   |
 | weighted avg |	  0.98    |	 0.98  |	  0.98	   |   600   |
+
+
+## FERPlus Classification Report
+
+|              | Precision |	Recall |	 f1-score | Support |
+|--------------|-----------|--------|-----------|---------|
+|     happy    |   0.87    |	 0.98  |	  0.92    |	  100   |
+|      sad     |	  1.00  	 |  0.86  |   0.92	   |   100   |
+|     fear     |	  0.81    |	 0.89  |	  0.85    |	  100   |
+|   surprise	  |   0.98  	 |  0.98	 |   0.98    |   100   |
+|     anger    |	  0.96    |	 0.87  |	  0.91    |	  100   |
+|   disgust    |   0.90	   |  0.90	 |   0.90	   |   100   |	
+|              |           |        |           |         |
+|   accuracy   |           |        |	  0.91    |	  600   |
+|   macro avg  |	  0.92    |	 0.91  |	  0.91    |	  600   |
+| weighted avg |	  0.92    |	 0.91  |	  0.91	   |   600   |
