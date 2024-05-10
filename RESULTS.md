@@ -43,21 +43,6 @@ The datasets that were tested:
 | weighted avg |	0.84  |	 0.84  |	0.84	   |   574    |
 
 
-## Four4All Classification Report
-
-|           | Precision |	Recall |	f1-score | Support |
-|-----------|-----------|--------|-----------|---------|
-| happiness |   0.95    |	 0.87  |	 0.91    |	 150   |
-| surprise  |	  0.92  	|  0.88  |   0.90	   |   150   |
-| sadness   |	  0.96    |	 0.88  |	 0.92    |	 150   |
-| anger	    |   0.89  	|  0.94	 |   0.91	   |   150   |
-| disgust   |	  0.87    |	 0.91  |	 0.89    |	 150   |
-| fear	    |   0.86	  |  0.95	 |   0.90	   |   150   |	
-|           |           |        |           |         |
-| accuracy  |           |        |	 0.90    |	 900   |
-| macro avg |	  0.91    |	 0.90  |	 0.90    |	 900   |
-| weighted avg |	0.91  |	 0.90  |	 0.90	   |   900   |
-
 
 ## CK+ Classification Report
 
@@ -91,6 +76,7 @@ The datasets that were tested:
 | weighted avg |	  0.98    |	 0.98  |	  0.98	   |   600   |
 
 
+
 ## FERPlus Classification Report
 
 |              | Precision |	Recall |	 f1-score | Support |
@@ -105,3 +91,20 @@ The datasets that were tested:
 |   accuracy   |           |        |	  0.91    |	  600   |
 |   macro avg  |	  0.92    |	 0.91  |	  0.91    |	  600   |
 | weighted avg |	  0.92    |	 0.91  |	  0.91	   |   600   |
+
+
+
+## Four4All Classification Report
+
+|           | Precision |	Recall |	f1-score | Support |
+|-----------|-----------|--------|-----------|---------|
+| happiness |   0.95    |	 0.87  |	 0.91    |	 150   |
+| surprise  |	  0.92  	|  0.88  |   0.90	   |   150   |
+| sadness   |	  0.96    |	 0.88  |	 0.92    |	 150   |
+| anger	    |   0.89  	|  0.94	 |   0.91	   |   150   |
+| disgust   |	  0.87    |	 0.91  |	 0.89    |	 150   |
+| fear	    |   0.86	  |  0.95	 |   0.90	   |   150   |	
+|           |           |        |           |         |
+| accuracy  |           |        |	 0.90    |	 900   |
+| macro avg |	  0.91    |	 0.90  |	 0.90    |	 900   |
+| weighted avg |	0.91  |	 0.90  |	 0.90	   |   900   |
