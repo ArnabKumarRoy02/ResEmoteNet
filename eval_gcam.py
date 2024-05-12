@@ -156,7 +156,7 @@ def evaluate_camera():
 
         faces = detect_bounding_box(video_frame, counter)  
 
-        cv2.imshow("My Face Detection Project", video_frame) 
+        cv2.imshow("Four4All Grad Cam", video_frame) 
 
         out.write(video_frame)
 
