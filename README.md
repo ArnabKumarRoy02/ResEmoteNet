@@ -16,6 +16,7 @@ The emotion labels in this project are:
  - [Installation](#installation)
  - [Dataset](#dataset)
  - [Usage](#usage)
+ - [Results](#results)
  - [License](#license)
 
 
@@ -46,6 +47,13 @@ Run the file.
 ```bash
 python fourforall.py
 ```
+
+## Results
+
+ - FER2013:
+   - Testing Accuracy: 77.69%
+ - CK+:
+   - Testing Accuracy: 100% 
 
 ## License
 
