@@ -54,6 +54,8 @@ python fourforall.py
    - Testing Accuracy: 77.69%
  - CK+:
    - Testing Accuracy: 100% 
+ - RAF-DB:
+   - Testing Accuracy: 82.88% (needs further update)
 
 ## License
 
