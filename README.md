@@ -57,7 +57,7 @@ python fourforall.py
  - RAF-DB:
    - Testing Accuracy: 94.76%
  - FERPlus:
-   - Testing Accuracy: 71.75% (tested for only 7 epochs)
+   - Testing Accuracy: 91.64$
 
 ## License
 
