@@ -51,7 +51,7 @@ python fourforall.py
 ## Results
 
  - FER2013:
-   - Testing Accuracy: 77.69%
+   - Testing Accuracy: 79.79%
  - CK+:
    - Testing Accuracy: 100% 
  - RAF-DB:
