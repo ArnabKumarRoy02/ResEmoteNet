@@ -24,7 +24,7 @@ The emotion labels in this project are:
 
 1. Create a Conda environment.
 ```bash
-conda create --n "Environment Name"
+conda create --n "fourforall"
 ```
 
 2. Install Python v3.8 using Conda.
@@ -34,12 +34,19 @@ conda install python=3.8
 
 3. Clone the repository.
 ```bash
-git clone "link to clone"
+git clone https://github.com/ArnabKumarRoy02/secret-fer.git
+```
+
+4. Install the required libraries.
+```bash
+pip install -r requirement.txt
 ```
 
 ## Dataset
 
 Checkout the dataset for this repository [here](https://github.com/ArnabKumarRoy02/data/tree/e48496150560e3fc28c8977b121edc2f639dd1b6).
+
+The complete dataset can also be found on [Kaggle](https://www.kaggle.com/datasets/arnabkumarroy02/four4all).
 
 ## Usage
 
@@ -51,13 +58,13 @@ python fourforall.py
 ## Results
 
  - FER2013:
-   - Testing Accuracy: 79.79%
+   - Testing Accuracy: **79.79%** (SoTA - 76.82%)
  - CK+:
-   - Testing Accuracy: 100% 
+   - Testing Accuracy: **100%** (SoTA - 100%)
  - RAF-DB:
-   - Testing Accuracy: 94.76%
+   - Testing Accuracy: **94.76%** (SoTA - 92.57%)
  - FERPlus:
-   - Testing Accuracy: 91.64%
+   - Testing Accuracy: 91.64% (SoTA - **95.55%**)
 
 ## License
 
