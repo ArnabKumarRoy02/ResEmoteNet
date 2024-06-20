@@ -65,6 +65,8 @@ python fourforall.py
    - Testing Accuracy: **94.76%** (SoTA - 92.57%)
  - FERPlus:
    - Testing Accuracy: 91.64% (SoTA - **95.55%**)
+ - AffectNet (7 emotions):
+   - Testing Accuracy: **72.93%** (SoTA - 69.4%)
 
 ## License
 
