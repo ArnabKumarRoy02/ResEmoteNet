@@ -1,0 +1,75 @@
+% Comparison with SoTA for FER2013
+\begin{table}[h]
+    \small
+    \caption{Performance Comparison of FER2013}
+    \begin{tabular}{|c|c|}
+        \hline
+         \textbf{Methods} & \textbf{Accuracy (\%)} \\
+         \hline
+
+         LHC-Net \cite{multiheadchannel} & 74.42 \\
+         \hline
+         Local Learning Deep+BOW \cite{georgescu2019local} & 75.42 \\
+         \hline
+         Segmentation VGG-19 \cite{vignesh2023novel} & 75.97 \\
+         \hline
+         EmoNeXt \cite{el2023emonext} & 76.12 \\
+         \hline
+         Ensemble ResMaskingNet with 6 other CNNs \cite{residualmasking} & 76.82 \\
+         \hline
+         \textbf{Ours} & \textbf{79.79} \\
+         \hline
+    \end{tabular}
+\end{table}
+
+% Comparison with SoTA for RAF-DB
+\begin{table}[h]
+    \centering
+    \small
+    \caption{Performance Comparison of RAF-DB}
+    \setlength{\tabcolsep}{20pt}
+    \begin{tabular}{|c|c|}
+        \hline
+         \textbf{Methods} & \textbf{Accuracy (\%)} \\
+         \hline
+
+         POSTER++ \cite{poster++} & 92.21 \\
+         \hline
+         DCJT \cite{dcjt} & 92.24 \\
+         \hline
+         DDAMFN++ \cite{zhang2023dual} & 92.34 \\
+         \hline
+         ARBEx \cite{arbex} & 92.47 \\
+         \hline
+         S2D \cite{s2d} & 92.57 \\
+         \hline
+         \textbf{Ours} & \textbf{94.76} \\
+         \hline
+    \end{tabular}
+\end{table}
+
+% Comparison with SoTA for AffectNet
+\begin{table}
+    \centering
+    \small
+    \caption{Performance Comparison of AffectNet}
+    \setlength{\tabcolsep}{20pt}
+    \begin{tabular}{|c|c|}
+        \hline
+         \textbf{Methods} & \textbf{Accuracy (\%)} \\
+         \hline
+
+         DDAMFN++ \cite{zhang2023dual} & 67.36 \\
+         \hline
+         POSTER++ \cite{poster++} & 67.49 \\
+         \hline
+         S2D \cite{s2d} & 67.62 \\
+         \hline
+         C MT EffNet-B2 \cite{kollias2024distribution} & 68.9 \\
+         \hline
+         C MT EmoAffectNet \cite{kollias2024distribution} & 69.4 \\
+         \hline
+         \textbf{Ours} & \textbf{72.93} \\
+         \hline
+    \end{tabular}
+\end{table}
