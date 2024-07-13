@@ -1,4 +1,4 @@
-# Four4All - Facial Emotion Recognition
+# ResEmoteNet - Facial Emotion Recognition
 
 A new network that helps in extracting facial features and predict the emotion labels.
 
@@ -24,7 +24,8 @@ The emotion labels in this project are:
 
 1. Create a Conda environment.
 ```bash
-conda create --n "fourforall"
+conda create --n "fer"
+conda activate fer
 ```
 
 2. Install Python v3.8 using Conda.
@@ -34,7 +35,7 @@ conda install python=3.8
 
 3. Clone the repository.
 ```bash
-git clone https://github.com/ArnabKumarRoy02/secret-fer.git
+git clone https://github.com/ArnabKumarRoy02/ResEmoteNet.git
 ```
 
 4. Install the required libraries.
