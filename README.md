@@ -9,6 +9,7 @@ The emotion labels in this project are:
  - Sadness ☹️
  - Disgust 🤢
  - Fear 😨
+ - Neutral 😐
 
 
 ## Table of Content:
@@ -53,7 +54,8 @@ The complete dataset can also be found on [Kaggle](https://www.kaggle.com/datase
 
 Run the file.
 ```bash
-python fourforall.py
+cd train_files
+python ResEmoteNet_train.py
 ```
 
 ## Results
