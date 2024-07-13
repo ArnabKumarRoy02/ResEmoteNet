@@ -8,7 +8,7 @@ from torchvision import transforms
 import torch.optim as optim
 import matplotlib.pyplot as plt
 
-from approach.fourforall import FourforAll
+from approach.ResEmoteNet import ResEmoteNet
 from get_dataset import Four4All
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
@@ -51,7 +51,7 @@ print(f"Test batch: Image shape {test_image.shape}, Label shape {test_label.shap
 
 
 # Load the model
-model = FourforAll().to(device)
+model = ResEmoteNet().to(device)
 
 
 # Print the number of parameters
