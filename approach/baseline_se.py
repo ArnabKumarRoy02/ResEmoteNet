@@ -43,7 +43,7 @@ class Base_SE(nn.Module):
         self.fc3 = nn.Linear(2048, 512)
         self.droupout1 = nn.Dropout(0.2)
         self.droupout2 = nn.Dropout(0.5)
-        self.fc4 = nn.Linear(512, 6)
+        self.fc4 = nn.Linear(512, 7)
         
     def forward(self, x):
         x = F.relu(self.bn1(self.conv1(x)))

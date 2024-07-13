@@ -27,7 +27,7 @@ class VGG(nn.Module):
             nn.Linear(4096, 1024),
             nn.ReLU(True),
             nn.Dropout(0.5),
-            nn.Linear(1024, 6)
+            nn.Linear(1024, 7)
         )
         
     def forward(self, x):

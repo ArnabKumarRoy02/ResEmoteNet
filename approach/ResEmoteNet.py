@@ -66,7 +66,7 @@ class ResEmoteNet(nn.Module):
         self.fc3 = nn.Linear(512, 256)
         self.dropout1 = nn.Dropout(0.2)
         self.dropout2 = nn.Dropout(0.5)
-        self.fc4 = nn.Linear(256, 6)
+        self.fc4 = nn.Linear(256, 7)
         
     def forward(self, x):
         x = F.relu(self.bn1(self.conv1(x)))
