@@ -8,7 +8,7 @@ import warnings
 from urllib3.exceptions import InsecureRequestWarning
 warnings.simplefilter('ignore', InsecureRequestWarning)
 
-from approach.fourforall import FourforAll
+from approach.ResEmoteNet import ResEmoteNet
 
 
 # Set the device
@@ -16,7 +16,7 @@ device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
 
 
 # Load the model
-model = FourforAll().to(device)
+model = ResEmoteNet().to(device)
 model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
 model.eval()
 
@@ -54,7 +54,7 @@ def process_folder(folder_path):
 
 def main(folder_path):
     results = process_folder(folder_path)
-    header = ['filepath', 'happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear']
+    header = ['filepath', 'happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
     with open('classification_scores.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(header)

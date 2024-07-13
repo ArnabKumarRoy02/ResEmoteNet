@@ -6,7 +6,7 @@ import cv2
 import dlib
 import numpy as np
 from hook import Hook
-from approach.fourforall import FourforAll
+from approach.ResEmoteNet import ResEmoteNet
 from retinaface import RetinaFace
 
 # Set the device
@@ -14,10 +14,10 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 device = torch.device("cpu")
 print(f"Using {device}")
 
-class_labels = ['happiness', 'surprise', 'sadness', 'anger', 'fear', 'disgust']
+class_labels = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
 
 # Load the model
-model = FourforAll().to(device)
+model = ResEmoteNet().to(device)
 model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
 model.eval()
 
@@ -156,7 +156,7 @@ def evaluate_camera():
 
         faces = detect_bounding_box(video_frame, counter)  
 
-        cv2.imshow("Four4All Grad Cam", video_frame) 
+        cv2.imshow("ResEmoteNet Grad Cam", video_frame) 
 
         out.write(video_frame)
 

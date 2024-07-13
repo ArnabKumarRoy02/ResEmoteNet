@@ -5,15 +5,15 @@ import torch.nn.functional as F
 import torchvision.transforms as transforms
 from PIL import Image
 import numpy as np
-from approach.fourforall import FourforAll
+from approach.ResEmoteNet import ResEmoteNet
 
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Emotions labels
-emotions = ['happiness', 'surprise', 'sadness', 'anger', 'fear', 'disgust']
+emotions = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
 
-model = FourforAll().to(device)
+model = ResEmoteNet().to(device)
 model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
 model.eval()
 
@@ -91,9 +91,8 @@ def detect_bounding_box(video_frame, counter):
         if counter == 0:
             max_emotion = get_max_emotion(x, y, w, h, video_frame) 
         
-        print_max_emotion(x, y, video_frame, max_emotion) # Displays the max_emotion according to evaluation_frequency
+        print_max_emotion(x, y, video_frame, max_emotion) 
         print_all_emotion(x, y, w, h, video_frame) 
-        # Evaluates every video_frame for debugging
 
     return faces
 
@@ -103,15 +102,14 @@ evaluation_frequency = 5
 # Loop for Real-Time Face Detection
 while True:
 
-    result, video_frame = video_capture.read()  # Read frames from the video
+    result, video_frame = video_capture.read()
     if result is False:
-        break  # Terminate the loop if the frame is not read successfully
+        break 
     
-    faces = detect_bounding_box(video_frame, counter)  # Apply the function we created to the video frame, faces as variable not used
+    faces = detect_bounding_box(video_frame, counter)
     
-    cv2.imshow("Four4All", video_frame)  # Display the processed frame in a window named "Four4All"
+    cv2.imshow("ResEmoteNet", video_frame) 
 
-    # print(type(video_frame))
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
     

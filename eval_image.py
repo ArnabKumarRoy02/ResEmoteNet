@@ -5,14 +5,14 @@ import torch.nn.functional as F
 import torchvision.transforms as transforms
 from PIL import Image
 import numpy as np
-from approach.fourforall import FourforAll
+from approach.ResEmoteNet import ResEmoteNet
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Emotions labels
-emotions = ['happiness', 'surprise', 'sadness', 'anger', 'fear', 'disgust']
+emotions = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
 
-model = FourforAll().to(device)
+model = ResEmoteNet().to(device)
 model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
 model.eval()
 
@@ -87,6 +87,6 @@ image = cv2.imread('image_test.jpg')
 faces = detect_bounding_box(image)
 
 # Display the processed image
-cv2.imshow("Four4All Image Test", image)
+cv2.imshow("ResEmoteNet Image Test", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
