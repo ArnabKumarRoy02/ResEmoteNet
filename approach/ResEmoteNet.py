@@ -44,9 +44,9 @@ class ResidualBlock(nn.Module):
         return out
     
     
-class FourforAll(nn.Module):
+class ResEmoteNet(nn.Module):
     def __init__(self):
-        super(FourforAll, self).__init__()
+        super(ResEmoteNet, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=3, padding=1)
         self.bn1 = nn.BatchNorm2d(64)
         self.conv2 = nn.Conv2d(64, 128, kernel_size=3, padding=1)
