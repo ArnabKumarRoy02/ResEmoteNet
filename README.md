@@ -70,6 +70,12 @@ python ResEmoteNet_train.py
    - Testing Accuracy: 91.64% (SoTA - **95.55%**)
  - AffectNet (7 emotions):
    - Testing Accuracy: **72.93%** (SoTA - 69.4%)
+   - Valance Estimation:
+     - CCC: 0.785
+     - RMSE: 0.249
+   - Arousal Estimation:
+     - CCC: 0.705
+     - RMSE: 0.254
 
 ## License
 
