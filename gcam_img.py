@@ -17,7 +17,7 @@ class_labels = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 
 
 # Load the model
 model = ResEmoteNet().to(device)
-model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
+model.load_state_dict(torch.load('best_model.pth', map_location=device))
 model.eval()
 
 final_layer = model.conv3

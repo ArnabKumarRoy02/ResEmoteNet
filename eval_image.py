@@ -13,7 +13,7 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 emotions = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
 
 model = ResEmoteNet().to(device)
-model.load_state_dict(torch.load('best_four4all.pth', map_location=device))
+model.load_state_dict(torch.load('best_model.pth', map_location=device))
 model.eval()
 
 transform = transforms.Compose([
