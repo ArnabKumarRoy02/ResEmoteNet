@@ -2,7 +2,9 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: ResEmoteNet
+title: >-
+  ResEmoteNet: Bridging Accuracy and Loss Reduction in
+  Facial Emotion Recognition
 message: >-
   ResEmoteNet: Bridging Accuracy and Loss Reduction in
   Facial Emotion Recognition
@@ -12,6 +14,20 @@ authors:
     email: arnabroy770@gmail.com
     affiliation: Sikkim Manipal Institute of Technology
     orcid: 'https://orcid.org/0009-0001-9988-4779'
+  - given-names: Hemant Kumar Kathania
+    email: hemant.ece@nitsikkim.ac.in
+    affiliation: National Institute of Technology Sikkim
+  - given-names: Adhitiya Sharma
+    email: b180078@nitsikkim.ac.in
+    affiliation: National Institute of Technology Sikkim
+  - given-names: Abhishek Dey
+    email: abhishek@kaliberlabs.com
+    affiliation: >-
+      Bay Area Advanced Analytics India (P) Ltd, A
+      Kaliber.AI
+  - given-names: Md. Sarfaraj Alam Ansari
+    email: sarfaraj@nitsikkim.ac.in
+    affiliation: National Institute of Technology Sikkim
 repository-code: 'https://github.com/ArnabKumarRoy02/ResEmoteNet/'
 abstract: >-
   The human face is a silent communicator, expressing
