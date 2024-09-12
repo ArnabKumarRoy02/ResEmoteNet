@@ -1,0 +1,45 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ResEmoteNet
+message: >-
+  ResEmoteNet: Bridging Accuracy and Loss Reduction in
+  Facial Emotion Recognition
+type: software
+authors:
+  - given-names: Arnab Kumar Roy
+    email: arnabroy770@gmail.com
+    affiliation: Sikkim Manipal Institute of Technology
+    orcid: 'https://orcid.org/0009-0001-9988-4779'
+repository-code: 'https://github.com/ArnabKumarRoy02/ResEmoteNet/'
+abstract: >-
+  The human face is a silent communicator, expressing
+  emotions and thoughts through its facial expressions. With
+  the advancements in computer vision in recent years,
+  facial emotion recognition technology has made significant
+  strides, enabling machines to decode the intricacies of
+  facial cues. In this work, we propose ResEmoteNet, a novel
+  deep learning architecture for facial emotion recognition
+  designed with the combination of Convolutional,
+  Squeeze-Excitation (SE) and Residual Networks. The
+  inclusion of SE block selectively focuses on the important
+  features of the human face, enhances the feature
+  representation and suppresses the less relevant ones. This
+  helps in reducing the loss and enhancing the overall model
+  performance. We also integrate the SE block with three
+  residual blocks that help in learning more complex
+  representation of the data through deeper layers. We
+  evaluated ResEmoteNet on three open-source databases:
+  FER2013, RAF-DB, and AffectNet, achieving accuracies of
+  79.79%, 94.76%, and 72.39%, respectively. The proposed
+  network outperforms state-of-the-art models across all
+  three databases. The source code for ResEmoteNet is
+  available at
+  https://github.com/ArnabKumarRoy02/ResEmoteNet
+keywords:
+  - Facial Emotion Recognition
+  - Convolutional Neural Network
+  - Squeeze and Excitation Network
+  - Residual Network
+license: MIT
