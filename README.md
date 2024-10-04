@@ -21,6 +21,7 @@ The emotion labels in this project are:
  - [Installation](#installation)
  - [Dataset](#dataset)
  - [Usage](#usage)
+ - [Checkpoints](#checkpoints)
  - [Results](#results)
  - [License](#license)
 
@@ -61,6 +62,9 @@ Run the file.
 cd train_files
 python ResEmoteNet_train.py
 ```
+
+## Checkpoints
+All of the checkpoint models for FER2013, RAF-DB and AffectNet-7 can be found [here](https://drive.google.com/drive/folders/1Daxa6d1-XFxxpg6dyxYl4V-anfiHwtqK?usp=sharing).
 
 ## Results
 
