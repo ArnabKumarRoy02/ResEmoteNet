@@ -17,7 +17,8 @@ device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
 
 # Load the model
 model = ResEmoteNet().to(device)
-model.load_state_dict(torch.load('best_model.pth', map_location=device))
+checkpoint = torch.load('best_model.pth', weights_only=True)
+model.load_state_dict(checkpoint['model_state_dict'])
 model.eval()
 
 
