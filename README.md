@@ -1,4 +1,4 @@
-# ResEmoteNet - Facial Emotion Recognition
+# ResEmoteNet: Bridging Accuracy and Loss Reduction in Facial Emotion Recognition
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-on-affectnet)](https://paperswithcode.com/sota/facial-expression-recognition-on-affectnet?p=resemotenet-bridging-accuracy-and-loss)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-on-fer2013)](https://paperswithcode.com/sota/facial-expression-recognition-on-fer2013?p=resemotenet-bridging-accuracy-and-loss)
@@ -19,7 +19,6 @@ The emotion labels in this project are:
 ## Table of Content:
 
  - [Installation](#installation)
- - [Dataset](#dataset)
  - [Usage](#usage)
  - [Checkpoints](#checkpoints)
  - [Results](#results)
@@ -48,12 +47,6 @@ git clone https://github.com/ArnabKumarRoy02/ResEmoteNet.git
 ```bash
 pip install -r requirement.txt
 ```
-
-## Dataset
-
-Checkout the dataset for this repository [here](https://github.com/ArnabKumarRoy02/data/tree/e48496150560e3fc28c8977b121edc2f639dd1b6).
-
-The complete dataset can also be found on [Kaggle](https://www.kaggle.com/datasets/arnabkumarroy02/four4all).
 
 ## Usage
 
