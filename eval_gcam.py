@@ -14,7 +14,7 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 device = torch.device("cpu")
 print(f"Using {device}")
 
-class_labels = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
+class_labels = ['happy', 'surprise', 'sad', 'anger', 'disgust', 'fear', 'neutral']
 
 # Load the model
 model = ResEmoteNet().to(device)
