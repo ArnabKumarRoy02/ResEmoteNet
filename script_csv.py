@@ -54,7 +54,7 @@ def process_folder(folder_path):
 
 def main(folder_path):
     results = process_folder(folder_path)
-    header = ['filepath', 'happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
+    header = ['filepath', 'happy', 'surprise', 'sad', 'anger', 'disgust', 'fear', 'neutral']
     with open('classification_scores.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(header)
