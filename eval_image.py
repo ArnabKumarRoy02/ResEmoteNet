@@ -10,7 +10,7 @@ from approach.ResEmoteNet import ResEmoteNet
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Emotions labels
-emotions = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
+emotions = ['happy', 'surprise', 'sad', 'anger', 'disgust', 'fear', 'neutral']
 
 model = ResEmoteNet().to(device)
 checkpoint = torch.load('best_model.pth', weights_only=True)
