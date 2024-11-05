@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('classification_scores_valid.csv')
 
 # Get the emotion labels
-emotions = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear', 'neutral']
+emotions = ['happy', 'surprise', 'sad', 'anger', 'disgust', 'fear', 'neutral']
 
 # Convert emotion columns to numeric data type
 for emotion in emotions:
