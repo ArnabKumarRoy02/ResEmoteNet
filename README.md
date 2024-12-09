@@ -3,6 +3,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-on-affectnet)](https://paperswithcode.com/sota/facial-expression-recognition-on-affectnet?p=resemotenet-bridging-accuracy-and-loss)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-on-fer2013)](https://paperswithcode.com/sota/facial-expression-recognition-on-fer2013?p=resemotenet-bridging-accuracy-and-loss)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-on-raf-db)](https://paperswithcode.com/sota/facial-expression-recognition-on-raf-db?p=resemotenet-bridging-accuracy-and-loss)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-fer-on-expw)](https://paperswithcode.com/sota/facial-expression-recognition-fer-on-expw?p=resemotenet-bridging-accuracy-and-loss)
 
 A new network that helps in extracting facial features and predict the emotion labels.
 
@@ -71,6 +72,8 @@ All of the checkpoint models for FER2013, RAF-DB and AffectNet-7 can be found [h
    - Testing Accuracy: 91.64% (SoTA - **95.55%**)
  - AffectNet (7 emotions):
    - Testing Accuracy: **72.93%** (SoTA - 69.4%)
+ - ExpW:
+   - Testing Accuracy: **75.67%**
 
 ## License
 
