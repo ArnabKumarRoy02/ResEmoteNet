@@ -78,3 +78,16 @@ All of the checkpoint models for FER2013, RAF-DB and AffectNet-7 can be found [h
 ## License
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+Cite our paper:
+```text
+@ARTICLE{10812829,
+  author={Roy, Arnab Kumar and Kathania, Hemant Kumar and Sharma, Adhitiya and Dey, Abhishek and Ansari, Md. Sarfaraj Alam},
+  journal={IEEE Signal Processing Letters}, 
+  title={ResEmoteNet: Bridging Accuracy and Loss Reduction in Facial Emotion Recognition}, 
+  year={2024},
+  pages={1-5},
+  keywords={Emotion recognition;Feature extraction;Convolutional neural networks;Accuracy;Training;Computer architecture;Residual neural networks;Facial features;Face recognition;Facial Emotion Recognition;Convolutional Neural Network;Squeeze and Excitation Network;Residual Network},
+  doi={10.1109/LSP.2024.3521321}
+}
+```
